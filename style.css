@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container .content.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.Snooze {
+  display: none;
+}
+
+.Snooze.show {
+  display: inline-block;
+
+  /* margin: 25px 0 25px 100px !important; */
+  font-size: 35px !important;
+  color: white !important;
+  text-shadow: 0 0 5px #0fa, 0 0 10px #0fa, 0 0 15px #0fa, 0 0 20px #0fa,
+    0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 60px #fff !important;
+  background-color: transparent !important;
+  animation: disco 2s infinite !important;
+  cursor: pointer !important;
+}
+
+#current_time {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-shadow: 0 0 5px #0fa, 0 0 10px #0fa, 0 0 15px #0fa, 0 0 20px #0fa,
+    0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 60px #fff;
+  background-color: transparent;
+
+  font-size: 60px;
+}
+
+.container {
+  margin: 20px auto;
+  text-align: center;
+  margin: 65px auto;
+}
+select {
+  margin: 25px 10px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 5px #0fa, 0 0 10px #0fa, 0 0 15px #0fa, 0 0 20px #0fa,
+    0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 60px #fff;
+  background-color: transparent;
+  animation: disco 2s infinite;
+  cursor: pointer;
+}
+select option {
+  color: black;
+}
+
+@keyframes disco {
+  0% {
+    text-shadow: 0 0 5px #f00, 0 0 10px #0f0, 0 0 15px #00f;
+  }
+  25% {
+    text-shadow: 0 0 5px #0f0, 0 0 10px #00f, 0 0 15px #f00;
+  }
+  50% {
+    text-shadow: 0 0 5px #00f, 0 0 10px #f00, 0 0 15px #0f0;
+  }
+  75% {
+    text-shadow: 0 0 5px #f00, 0 0 10px #0f0, 0 0 15px #00f;
+  }
+  100% {
+    text-shadow: 0 0 5px #0f0, 0 0 10px #00f, 0 0 15px #f00;
+  }
+}
+
+#setAlarm {
+  margin: 25px 35px;
+  font-size: 35px;
+  color: white;
+  text-shadow: 0 0 5px #0fa, 0 0 10px #0fa, 0 0 15px #0fa, 0 0 20px #0fa,
+    0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 60px #fff;
+  background-color: transparent;
+  animation: disco 2s infinite;
+  cursor: pointer;
+}
+
+.mybuttons {
+  display: inline;
+}
+
+/* Making shake animations for currentTime and  */
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10%,
+  90% {
+    transform: translate(-5px, 0);
+  }
+  20%,
+  80% {
+    transform: translate(5px, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate(-10px, 0);
+  }
+  40%,
+  60% {
+    transform: translate(10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+img {
+  margin: 10px auto;
+  background-color: white;
+  width: 60px;
+  border-radius: 30%;
+}
+
+/* #current_time.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+} */
+
+.shake.shakeImg {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
